@@ -90,11 +90,15 @@ Temos 2 tipos de paralelização **SyncVectorEnvs** e **AsyncVectorEnvs** em que
 
 [2023] - Towards Monosemanticity: Decomposing Language Models With Dictionary Learning
 
+[2024] - A Multimodal Automated Interpretability Agent
+
 ### *Decomposição de Recompensa* - A Recompensa guia o resultado esperado pelo modelo
 
 **LPM, Reward Decomposition** 
 
 [2019] - Explaining reinforcement learning to mere mortals: An empirical study
+
+[2022] - From Attribution Maps to Human-Understandable Explanations through Concept Relevance Propagation
 
 ### *Confirmação de Hipótese* - Alterar o ambiente com base no diagnóstico feito pelas técnicas de explicabilidade de uma rede e verificar como isso alterou o resultado do ambiente. 
 
