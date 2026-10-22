@@ -84,9 +84,17 @@ Temos 2 tipos de paralelização **SyncVectorEnvs** e **AsyncVectorEnvs** em que
 
 **Probing linear, TCAV, SAEs, CRP**
 
+[2018] - Summarizing agent behavior to people
+
+[2023] - Sparse Autoencoders Find Highly Interpretable Features in Language Models
+
+[2023] - Towards Monosemanticity: Decomposing Language Models With Dictionary Learning
+
 ### *Decomposição de Recompensa* - A Recompensa guia o resultado esperado pelo modelo
 
 **LPM, Reward Decomposition** 
+
+[2019] - Explaining reinforcement learning to mere mortals: An empirical study
 
 ### *Confirmação de Hipótese* - Alterar o ambiente com base no diagnóstico feito pelas técnicas de explicabilidade de uma rede e verificar como isso alterou o resultado do ambiente. 
 
