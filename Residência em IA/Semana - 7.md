@@ -38,31 +38,34 @@ Dentro do artigo ele apresenta métricas que uma análise de explicabilidade pre
 
 **Acionabilidade** - O quanto essa métrica contribui para a mudança de comportamento da rede.
 
-**Capacidade Cognitiva** - Quanto tempo demorapara uma pessoa realizar o diganostíco com base na métrica passada de explicabilidade.
+**Capacidade Cognitiva** - Quanto tempo demora para uma pessoa realizar o diagnostíco com base na métrica passada de explicabilidade.
 
 **Visualização** - Sem tem alguma maneira de visualizar as métricas utilizadas 
 
 O artigo propõe certas categorias de análise também, sendo elas:
 
-**Feature Importance** - O quanto cada feature es
+**Feature Importance** - O quanto cada feature está sendo utilizada e impacta no resultado (escolha de ações dentro de uma rede neural).
 
-**Learning Process and MDP** - 
+**Learning Process and MDP** - Considerando um processo de decisão de Markov entender como a política muda durante o treinamento com base em exemplos, decompor funções de recompensa .
 
-**Policy level** - 
-
-
-
+**Policy level** - Verificar como podemos identificar um padrão das transições de estados realizada pela política. 
 
 # Frameworks de Aprendizado por Reforço
 ## Frameworks de Explicabilidade
 
 ### [2021] - CleanRL High quality Single file Implementations of Deep Reinforcement Learning Algorithms (Huang et al. 2021)
 
+Framework que realiza a implementação de diversos algoritmos de **RL** em ambientes diferentes trazendo implementações minimalistas.
 
+**PPO** - 
+
+**DQN** - 
 
 ### [2024] - Gymnasium A Standardized Interface for Reinforcement Learning Environments (Towers et al. 2024)
 
+Um Framework que padroniza os mods de implementação de Aprendizado por Reforço, utilizando ambiente já comumente utilizadas e metódos de paralelizaçao de ambientes, registro de alterações e Wrappers para conseguir desenvolver em cima desses ambientes. 
 
+Temos 2 tipos de paralelização **SyncVectorEnvs** e **AsyncVectorEnvs** em que o sincrono faz com que todos os ambientes em paralelo atualizem o gradiente de maneira syncrona, e o async não. O async normalmente garante mais performance mais no custo de memória. 
 
 
 # Resumo com base na taxônomia do que deve ser estudado
