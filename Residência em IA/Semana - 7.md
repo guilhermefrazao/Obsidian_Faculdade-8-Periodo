@@ -74,6 +74,12 @@ Temos 2 tipos de paralelização **SyncVectorEnvs** e **AsyncVectorEnvs** em que
 
 **Integrated Gradientes, SHAP e Saliência por Perturbação** 
 
+[2018] - Verifiable reinforcement learning via policy extraction.
+
+[2021] - Iterative bounding MDPs: Learning inter-pretable policies via non-interpretable method
+
+[2017] - A Unified Approach to Interpreting Model Predictions
+
 ### *Representação da Informação* - A rede neural consegue códificar as informações necessárias passadas como input: 
 
 **Probing linear, TCAV, SAEs, CRP**
@@ -85,6 +91,10 @@ Temos 2 tipos de paralelização **SyncVectorEnvs** e **AsyncVectorEnvs** em que
 ### *Confirmação de Hipótese* - Alterar o ambiente com base no diagnóstico feito pelas técnicas de explicabilidade de uma rede e verificar como isso alterou o resultado do ambiente. 
 
 **Activation steering, pathing, mudança de ambiente** 
+
+
+
+
 
 ### Verificar o que o claude cuspiu e retirar o ruído.
 
