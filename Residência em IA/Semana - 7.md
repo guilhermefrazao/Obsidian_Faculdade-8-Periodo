@@ -76,15 +76,13 @@ Temos 2 tipos de paralelização **SyncVectorEnvs** e **AsyncVectorEnvs** em que
 
 [2018] - Verifiable reinforcement learning via policy extraction.
 
-[2021] - Iterative bounding MDPs: Learning inter-pretable policies via non-interpretable method
-
 [2017] - A Unified Approach to Interpreting Model Predictions
 
 ### *Representação da Informação* - A rede neural consegue códificar as informações necessárias passadas como input: 
 
 **Probing linear, TCAV, SAEs, CRP**
 
-[2018] - Summarizing agent behavior to people
+[2018] - Summarizing agent behavior to people - RL
 
 [2023] - Sparse Autoencoders Find Highly Interpretable Features in Language Models
 
@@ -96,7 +94,7 @@ Temos 2 tipos de paralelização **SyncVectorEnvs** e **AsyncVectorEnvs** em que
 
 **LPM, Reward Decomposition** 
 
-[2019] - Explaining reinforcement learning to mere mortals: An empirical study
+[2019] - Explaining reinforcement learning to mere mortals: An empirical study - RL
 
 [2022] - From Attribution Maps to Human-Understandable Explanations through Concept Relevance Propagation
 
