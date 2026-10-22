@@ -9,9 +9,9 @@ Explorei um pouco sobre o tema de **Generalização** em modelos treinados com *
 
 # Processo de como treinar uma Rede com Aprendizado por Reforço 
 
-Com base em um problema sequencial (em que estados futuros são atingidos somente por ações realizadas nos estados atuais, que contém toda a informação do ambiente), mapeado como um processo de decisão de markov - (s,a,r), em que o modelo (Pode ser qualquer tipo de rede neural adaptada com uma técnica de reforço para o meu problema EX: PPO + CNN, PPO + Transformers, A2c + CNN...) recebe como input a **obs** que representa o estado, retorna uma ação, depois disso o critico confere um Valor para essa ação. Atualmente esse ciclo se repete por uma quantidade grande de vezes, até que a rede seja atualizada no rollout que infere novamente os valores de **Probabilidade dada a ação escolhida estado pelo ator** e com base nessa probabilidade calcula o quanto uma política antiga != política nova. Para c
+Com base em um problema sequencial (em que estados futuros são atingidos somente por ações realizadas nos estados atuais, que contém toda a informação do ambiente), mapeado como um processo de decisão de markov - (s,a,r), em que o modelo (Pode ser qualquer tipo de rede neural adaptada com uma técnica de reforço para o meu problema EX: PPO + CNN, PPO + Transformers, A2c + CNN...) recebe como input a **obs** que representa o estado, retorna uma ação, depois disso o critico confere um Valor para essa ação. Atualmente esse ciclo se repete por uma quantidade grande de vezes, até que a rede seja atualizada no rollout que infere novamente os valores de **Probabilidade dada a ação escolhida estado pelo ator** e com base nessa probabilidade calcula o quanto uma política antiga != política nova. Para calcular a **Clipped Surrogate Loss** e somar isso pela **Entropia**. O mesmo calculo acontece com o **Critico** em que comparamos o Valor dado a um estado V(s^t+1) - V(s). 
 
-E esse ciclo se repete por uma quantidade gigante de episódios que cada x eps representa um step da função e depois de uma grande quantidade de episódios minha rede neural foi treinada. No entanto, para validar o treinamento e conseguir diagnosticar as suas capacidades, penso em observar as suas métricas de treinamento (mean/return, loss, entropy...), mas isso só informa o engenheiro de machine learning (Temos um problema), não informa o que é o problema, de onde ele veio. Com isso, seu papel é investigar esse problema e conseguir diagnósticar alterando o ambiente para verificar como melhorar a capacidade da rede.
+E esse ciclo se repete por uma quantidade gigante de episódios em que cada x Episódios representa um step da função e depois de uma grande quantidade de episódios minha rede neural foi treinada. No entanto, para validar o treinamento e conseguir diagnosticar as suas capacidades, penso em observar as suas métricas de treinamento (mean/return, loss, entropy...), mas isso só informa o engenheiro de machine learning (Temos um problema), não informa o que é o problema, de onde ele veio. Com isso, o papel do engenheiro é investigar esse problema e conseguir diagnósticar alterando o ambiente para verificar como melhorar a capacidade da rede.
 
 Dentro desses gap de diagnóstico é onde entra a pesquisa que eu gostaria de fazer, pensei primeiramente em análisar as capacidades de generalização de uma rede que foi bem sucedida e verificar os seus artefatos que colaboraram para que essa rede tivesse um bom resultado, mas essa abordagem de pesquisa torna o problema muito especifíco e corresponde a boas práticas utilizadas durante o treinamento (dentro de um problema específico) que fazem com que ele tenha bons resultados.
 
@@ -26,7 +26,29 @@ Pelo que eu entendi, o meu objetivo de conseguir melhorar o entedimento do probl
 
 Tem como objetivo de pesquisa ajudar pesquisadores a tomarem decisões de melhora do modelo em cima de erros, além de permitir uma verificação se o agente irá atuar em produção de maneira segura e razoável.
 
+Dentro do artigo ele apresenta métricas que uma análise de explicabilidade precisa verificar para diferentes tipos de análise.
 
+**Fidelidade** - Se o modelo utilizado como **Post-hoc** tem escolhas de ações parecidas com o do modelo original.
+
+**Performance** - Se o modelo utilizado como **Post-hoc** tem capacidade semelhante as capacidades de uma rede original.
+
+**Comprensibilidade** - Dificuldade de compressão da análise se Explicabilidade feita, pelos usuários.
+
+**Preferência** - Como as pessoas que irão utilizar essa análise preferem que essa métricas fiquem mostradas.
+
+**Acionabilidade** - O quanto essa métrica contribui para a mudança de comportamento da rede.
+
+**Capacidade Cognitiva** - Quanto tempo demorapara uma pessoa realizar o diganostíco com base na métrica passada de explicabilidade.
+
+**Visualização** - Sem tem alguma maneira de visualizar as métricas utilizadas 
+
+O artigo propõe certas categorias de análise também, sendo elas:
+
+**Feature Importance** - O quanto cada feature es
+
+**Learning Process and MDP** - 
+
+**Policy level** - 
 
 
 
