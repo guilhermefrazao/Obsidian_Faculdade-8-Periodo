@@ -22,24 +22,19 @@ Para essa semana eu planejo ler pelo menos 1 artigo mencionado para duas sub-ár
 
 [2017] - A Unified Approach to Interpreting Model Predictions
 
-### *Representação da Informação* - A rede neural consegue códificar as informações necessárias passadas como input: 
+### *Knowledge Representaiton* - A rede neural consegue códificar as informações necessárias passadas como input: 
 
 **Probing linear, TCAV, SAEs, CRP**
 
-[2018] - Summarizing agent behavior to people - RL
-
-[2023] - Sparse Autoencoders Find Highly Interpretable Features in Language Models
-
 [2023] - Towards Monosemanticity: Decomposing Language Models With Dictionary Learning
 
-[2024] - A Multimodal Automated Interpretability Agent
+[2025] - CAUSAL INTERPRETATION OF NEURAL NETWORK
+COMPUTATIONS WITH CONTRIBUTION DECOMPOSITION
 
 ### *Decomposição de Recompensa* - A Recompensa guia o resultado esperado pelo modelo
 
 **LPM, Reward Decomposition** 
 
-[2019] - Explaining reinforcement learning to mere mortals: An empirical study - RL
+[2019] - Explaining reinforcement learning to mere mortals: An empirical study 
 
-[2022] - From Attribution Maps to Human-Understandable Explanations through Concept Relevance Propagation
 
-### *Confirmação de Hipótese* - 
