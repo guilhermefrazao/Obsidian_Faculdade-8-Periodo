@@ -38,3 +38,19 @@ COMPUTATIONS WITH CONTRIBUTION DECOMPOSITION
 [2019] - Explaining reinforcement learning to mere mortals: An empirical study 
 
 
+# Leitura - Artigos
+
+
+# [2018] - Verifiable reinforcement learning via policy extraction.
+
+
+
+#  [2017] - A Unified Approach to Interpreting Model Predictions
+
+
+
+# [2019] - Explaining reinforcement learning to mere mortals: An empirical study 
+
+
+
+# [2025] - Causal Interpretation Of Neural Network Computations With Contribution Decomposition
