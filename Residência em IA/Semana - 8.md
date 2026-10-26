@@ -43,13 +43,17 @@ COMPUTATIONS WITH CONTRIBUTION DECOMPOSITION
 
 # [2018] - Verifiable reinforcement learning via policy extraction.
 
-
+O artigo propõe o uso de um modelo chamada de **Viper** que funciona como um explainable model que utiliza **destilação** de conhecimento por meio de **imitational learning** para copiar o conhecimento de um modelo treinado com RL dentro de um modelo de árvore de decisão que é por natureza interpretável. 
 
 #  [2017] - A Unified Approach to Interpreting Model Predictions
 
+Utiliza como base uma ideia de teória dos jogos, chamada de SHAP (Shapley Aditive Explanation), que com base em um resultado permite calcular o quanto daquele resultado deve ser atribuído as features envolvidas, permitindo métrificar o quanto cada feature contribui para o resultado final.
 
+Tendo diferentes tipos de conseguir estimar o quanto essa feature contribui com regressão linear, amostragem... Todas respeitando 3 propriedades "Local Accuracy", "Missingness" e "Consistency".
 
 # [2019] - Explaining reinforcement learning to mere mortals: An empirical study 
+
+
 
 
 
