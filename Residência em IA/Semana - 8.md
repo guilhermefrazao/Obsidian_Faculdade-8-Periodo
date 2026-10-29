@@ -67,4 +67,13 @@ Tendo diferentes tipos de conseguir estimar o quanto essa feature contribui com 
 
 # Estudo do CODEC - Github
 
-Ao estudar a estrutura e funcionamento do código do último artigo mencionado acima, elenquei uma estrutura 
+Ao estudar a estrutura e funcionamento do código do último artigo mencionado acima, elenquei uma estrutura geral de como ele funciona para melhor entendimento.
+
+
+Primeiro precisamos ter uma rede neural treinada e o dataset utilizado como treinamento, para conseguir utilizar **Integrated Gradientes** para encontrar com base em um input de dados feito na minha rede neural, qual seriam os neurônios que mais foram ativados e mais contribuíram com a mudança de valores para categorizar o resultado alcançado (pode ser um resultado ruim ou bom)
+
+[Axiomatic Attribution for Deep Networks](https://arxiv.org/abs/1703.01365)
+
+Depois de calcularmos as contribuições verificamos por Câmada, quais neurônios dentro de uma determinada câmada contribuíram positivamente para o input e quais contribuíram de forma negativa, filtramos para os que contribuiram positivamente e utilizamos essas contribuições para treinar um **Sparse Autoencoders** para conseguir gerar **Clusters de neurônios (modos)** que são comumente ativados e contribuem para o resultado correlacionando com determinados digitos e imagens, além de correlacionar com o peso que cada neurônio tem no modo que eles são ativados. 
+
+Com isso, esse artigo me entrega a contribuição local e global de neurônios para o output da minha rede neural. Mas para conseguir melhorar a minha análise preciso entender também o que cada um dos neurônios está visualizando. 
